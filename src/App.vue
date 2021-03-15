@@ -1,28 +1,57 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <router-view> </router-view> 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+      
   }
-}
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  #itemsList {
+  width: 100%;
+  max-width: 70%;
+  margin: 0px;
+  padding: 0 5px;
+  box-sizing: border-box;
 }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  flex-grow: 1;
+  flex-basis: 300px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #222;
+  margin: 10px;
+}
+img {
+  width: 135px;
+  height: 135px;
+}
+
+#price {
+  font-size: 30px;
+}
+
+#itemName {
+  font-size: 30px;
+}
+
+#shoppingBasket {
+  position: absolute;
+  top: 23%;
+  left: 78%;
+}
+
+
 </style>
